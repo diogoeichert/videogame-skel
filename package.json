@@ -23,9 +23,9 @@
 	},
 	"homepage": "https://github.com/diogoeichert/videogame-skel#readme",
 	"devDependencies": {
-		"eslint-config-classic": "^1.2.0"
+		"eslint-config-classic": "^1.2.1"
 	},
 	"dependencies": {
-		"videogame": "^1.10.4"
+		"videogame": "^1.16.0"
 	}
 }
