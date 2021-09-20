@@ -1,31 +1,31 @@
 {
-	"name": "videogame-skel",
+	"name": "core-skel",
 	"version": "0.0.0",
-	"description": "Sample project using the Videogame engine",
+	"description": "Sample project using the Core engine",
 	"main": "main.js",
 	"scripts": {
 		"test": "eslint --fix ."
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/diogoeichert/videogame-skel.git"
+		"url": "git+https://github.com/diogoeichert/core-skel.git"
 	},
 	"keywords": [
 		"game",
 		"sample",
 		"skel",
-		"videogame"
+		"core"
 	],
 	"author": "Diogo Eichert",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/diogoeichert/videogame-skel/issues"
+		"url": "https://github.com/diogoeichert/core-skel/issues"
 	},
-	"homepage": "https://github.com/diogoeichert/videogame-skel#readme",
+	"homepage": "https://github.com/diogoeichert/core-skel#readme",
 	"devDependencies": {
 		"eslint-config-classic": "^1.2.1"
 	},
 	"dependencies": {
-		"videogame": "^1.16.0"
+		"core": "^1.16.0"
 	}
 }

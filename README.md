@@ -1,2 +1,2 @@
-# videogame-skel
-Sample project using the [Videogame](https://github.com/diogoeichert/videogame) engine
+# core-skel
+Sample project using the [Core](https://github.com/diogoeichert/core) engine

@@ -1,15 +1,15 @@
 "use strict";
 
-/* global videogame */
+/* global core */
 
-const Color = videogame.Color;
-const Command = videogame.Command;
-const ControllableSprite = videogame.plugin.ControllableSprite;
-const Starfield = videogame.plugin.Starfield;
-const TextSprite = videogame.TextSprite;
-const Videogame = videogame.Videogame;
+const Color = core.Color;
+const Command = core.Command;
+const ControllableSprite = core.plugin.ControllableSprite;
+const Starfield = core.plugin.Starfield;
+const TextSprite = core.TextSprite;
+const Core = core.Core;
 
-let scene = Videogame.scene()
+let scene = Core.scene()
 	.setColor(Color.Navy);
 
 const starfield = new Starfield()
@@ -40,7 +40,7 @@ player.update = () => {
 	}
 };
 
-const loot = Videogame.sprite()
+const loot = Core.sprite()
 	.setWidth(16)
 	.setHeight(16)
 	.setCenter(scene.center)
@@ -49,8 +49,8 @@ const loot = Videogame.sprite()
 
 loot.onCollision = () => {
 	++score.text;
-	loot.centerX = Videogame.random(scene.width);
-	loot.centerY = Videogame.random(scene.height);
+	loot.centerX = Core.random(scene.width);
+	loot.centerY = Core.random(scene.height);
 };
 
 scene.add(starfield);
@@ -58,5 +58,5 @@ scene.add(score);
 scene.add(player);
 scene.add(loot);
 score.text = 0;
-Videogame.setName("My Game");
-Videogame.init(scene);
+Core.setName("My Game");
+Core.init(scene);
